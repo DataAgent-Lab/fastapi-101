@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  raccoonai-agent-api:
+    image: my-api:latest
+    container_name: my_api
+    volumes:
+      - ./src:/app/src
+    ports:
+      - "8888:8888"
+    ipc: host
+    restart: unless-stopped
