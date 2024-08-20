@@ -12,6 +12,7 @@ fastapi-101/
 │       ├── api.py
 │       └── endpoints/
 │           ├── __init__.py
+│           ├── auth.py
 │           ├── models.py
 │           └── ai_function.py
 │
@@ -76,3 +77,11 @@ sudo ln -s /etc/nginx/sites-available/yourdomain.com /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo service nginx restart
 ```
+
+- Then you can enter `http://<your-ip>:8888/docs` to view the API Docs
+
+
+### Add API Token
+
+For security, users should authorized to call your API.
+

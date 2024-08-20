@@ -1,12 +1,13 @@
 version: '3.3'
 
 services:
-  raccoonai-agent-api:
+  my-api:
     image: my-api:latest
+    entrypoint: ["bash", "-c", "uvicorn main:app --host 0.0.0.0 --port 8888 --workers 2"]
     container_name: my_api
     volumes:
       - ./src:/app/src
     ports:
-      - "8888:8888"
+      - "8895:8888"
     ipc: host
     restart: unless-stopped
