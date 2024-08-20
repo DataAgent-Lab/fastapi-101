@@ -1,5 +1,8 @@
 # FastAPI 101
 
+API Preview:
+![](https://i.imgur.com/ryEzpGO.png)
+
 ### Project Structure
 ```
 fastapi-101/
